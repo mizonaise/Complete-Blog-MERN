@@ -1,6 +1,6 @@
 import { Header } from "./components";
 
-function App() {
+function HomeScreen() {
   return (
     <>
       <Header />
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomeScreen;
