@@ -1,9 +1,9 @@
-import { Header } from "./components";
+import { HomeScreen } from "./screens";
 
 function App() {
   return (
     <>
-      <Header />
+      <HomeScreen />
     </>
   );
 }
