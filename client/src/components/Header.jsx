@@ -1,4 +1,4 @@
-import NavBar from "./Navbar";
+import { NavBar } from ".";
 import { Link } from "react-router-dom";
 
 function Header() {
