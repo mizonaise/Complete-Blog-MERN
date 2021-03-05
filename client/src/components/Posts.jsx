@@ -1,8 +1,6 @@
-import PostItem from "./PostItem";
-import Pagination from "./Pagination";
+import { Pagination, PostItem } from ".";
 
 const Posts = () => {
-  //   const postItems = posts.map((post) => <PostItem post={post} />);
 
   return (
     <div className="col-lg-8">

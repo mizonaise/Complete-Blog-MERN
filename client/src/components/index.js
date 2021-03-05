@@ -1,9 +1,14 @@
 export { default as Header } from "./Header";
+export { default as HeaderTwo } from "./HeaderTwo";
 export { default as NavBar } from "./Navbar";
 export { default as Slider } from "./Slider";
 export { default as FrechStories } from "./FrechStories";
 export { default as TrendingPosts } from "./TrendingPosts";
 export { default as Footer } from "./Footer";
 export { default as Posts } from "./Posts";
+export { default as PostItem } from "./PostItem";
+export { default as Pagination } from "./Pagination";
 export { default as Sidebar } from "./Sidebar";
 export { default as Breadcrumb } from "./Breadcrumb";
+export { default as PostDesc } from "./PostDesc";
+export { default as Comment } from "./Comment";

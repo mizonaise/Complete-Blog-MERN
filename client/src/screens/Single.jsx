@@ -1,9 +1,13 @@
-import { Header, Footer } from "../components";
+import { Comment, Footer, HeaderTwo, PostDesc } from "../components";
 
 function SingleScreen() {
   return (
     <>
-      <Header />
+      <HeaderTwo />
+      <div className="single-post no-sidebar">
+        <PostDesc />
+        <Comment />
+      </div>
       <Footer />
     </>
   );

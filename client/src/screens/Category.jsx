@@ -1,9 +1,9 @@
-import { Header, Footer, Breadcrumb, Posts, Sidebar } from "../components";
+import { Footer, Breadcrumb, Posts, Sidebar, HeaderTwo } from "../components";
 
 function CategoryScreen() {
   return (
     <>
-      <Header />
+      <HeaderTwo />
       <Breadcrumb />
       <section className="blog-section">
         <div className="container">
