@@ -8,7 +8,7 @@ function Header() {
         <div className="container">
           <div className="inner-logo-place">
             <Link to="/" className="navbar-brand">
-              <img src="images/logo.png" alt="" />
+              COMPLETE BLOG
             </Link>
           </div>
         </div>

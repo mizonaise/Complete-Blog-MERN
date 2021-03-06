@@ -2,8 +2,10 @@ function Footer() {
   return (
     <footer>
       <div className="container">
-        <h1>Mitte</h1>
-        <p className="copyright-line">© Copyright 2019 - All rights reserved.</p>
+        <h1>COMPLETE BLOG</h1>
+        <p className="copyright-line">
+          © Copyright 2021 - All rights reserved.
+        </p>
         <ul className="social-list">
           <li>
             <a href="/">

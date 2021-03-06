@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Footer, Header } from "../components";
 
 const NotFound = () => {
@@ -19,9 +20,9 @@ const NotFound = () => {
             <p>
               We are sorry. But the page you are looking for cannot be found.{" "}
             </p>
-            <a className="button-one" href="index.html">
+            <Link className="button-one" to="/">
               Go To HomePage
-            </a>
+            </Link>
           </div>
         </div>
       </section>

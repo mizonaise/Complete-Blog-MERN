@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function FrechStories() {
   return (
     <section className="fresh-section on-trend-mode">
@@ -16,9 +18,7 @@ function FrechStories() {
                   Travel
                 </a>
                 <h2>
-                  <a href="single-post.html">
-                    Vivamus vestibulum ntulla necante.
-                  </a>
+                  <Link to="/single">Vivamus vestibulum ntulla necante.</Link>
                 </h2>
                 <ul className="post-tags">
                   <li>3 days ago</li>
@@ -35,9 +35,9 @@ function FrechStories() {
                   erat ut turpis. Suspendisse urna viverra donec nec justo eget
                   felis facilisis fermentum ...{" "}
                 </p>
-                <a className="text-link" href="single-post.html">
+                <Link className="text-link" to="/single">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -50,9 +50,7 @@ function FrechStories() {
                   Food
                 </a>
                 <h2>
-                  <a href="single-post.html">
-                    Praesent placerat risus quis eros.
-                  </a>
+                  <Link to="/single">Praesent placerat risus quis eros.</Link>
                 </h2>
                 <ul className="post-tags">
                   <li>3 days ago</li>
@@ -69,9 +67,9 @@ function FrechStories() {
                   erat ut turpis. Suspendisse urna viverra donec nec justo eget
                   felis facilisis fermentum ...{" "}
                 </p>
-                <a className="text-link" href="single-post.html">
+                <Link className="text-link" to="/single">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -84,9 +82,7 @@ function FrechStories() {
                   Food
                 </a>
                 <h2>
-                  <a href="single-post.html">
-                    Morbi in sem quisdui placerat ornare.
-                  </a>
+                  <Link to="/single">Morbi in sem quisdui placerat ornare.</Link>
                 </h2>
                 <ul className="post-tags">
                   <li>3 days ago</li>
@@ -103,9 +99,9 @@ function FrechStories() {
                   erat ut turpis. Suspendisse urna viverra donec nec justo eget
                   felis facilisis fermentum ...{" "}
                 </p>
-                <a className="text-link" href="single-post.html">
+                <Link className="text-link" to="/single">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

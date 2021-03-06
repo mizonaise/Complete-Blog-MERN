@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Slider() {
   return (
     <section className="top-slider-section fullscreen-slider">
@@ -14,9 +16,9 @@ function Slider() {
                     </a>
                   </div>
                   <h2>
-                    <a href="single-post.html">
+                    <Link to="/single">
                       Integer vitae libero acrisus egestas.
-                    </a>
+                    </Link>
                   </h2>
                   <ul className="post-tags">
                     <li>
@@ -27,9 +29,9 @@ function Slider() {
                       by <a href="/">John Smith</a>
                     </li>
                   </ul>
-                  <a className="white-button" href="single-post.html">
+                  <Link className="white-button" to="/single">
                     View Post
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -44,9 +46,9 @@ function Slider() {
                     </a>
                   </div>
                   <h2>
-                    <a href="single-post.html">
+                    <Link to="/single">
                       Praesent placerat risus quis eros.
-                    </a>
+                    </Link>
                   </h2>
                   <ul className="post-tags">
                     <li>
@@ -57,9 +59,9 @@ function Slider() {
                       by <a href="/">John Smith</a>
                     </li>
                   </ul>
-                  <a className="white-button" href="single-post.html">
+                  <Link className="white-button" to="/single">
                     View Post
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

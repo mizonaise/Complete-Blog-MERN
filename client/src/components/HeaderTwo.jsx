@@ -68,12 +68,12 @@
 //                     </ul>
 //                   </li>
 //                   <li>
-//                     <a href="single-post.html">
+//                     <a to="/single">
 //                       Post Styles <i className="fa fa-angle-right"></i>
 //                     </a>
 //                     <ul className="dropdown level2">
 //                       <li>
-//                         <a href="single-post.html">classNameic sidebar</a>
+//                         <a to="/single">classNameic sidebar</a>
 //                       </li>
 //                       <li>
 //                         <a href="single-post2.html">fullwidth sidebar</a>
@@ -109,7 +109,7 @@
 //                       <img src="upload/blog/c10.jpg" alt="" />
 //                     </div>
 //                     <h2>
-//                       <a href="single-post.html">
+//                       <a to="/single">
 //                         Aliquam tincidunt mauris eu risus.
 //                       </a>
 //                     </h2>
@@ -125,7 +125,7 @@
 //                       <img src="upload/blog/c11.jpg" alt="" />
 //                     </div>
 //                     <h2>
-//                       <a href="single-post.html">Cras ornare tristique elit.</a>
+//                       <a to="/single">Cras ornare tristique elit.</a>
 //                     </h2>
 //                     <ul className="post-tags">
 //                       <li>
@@ -139,7 +139,7 @@
 //                       <img src="upload/blog/c12.jpg" alt="" />
 //                     </div>
 //                     <h2>
-//                       <a href="single-post.html">Praesent placerat risus.</a>
+//                       <a to="/single">Praesent placerat risus.</a>
 //                     </h2>
 //                     <ul className="post-tags">
 //                       <li>
@@ -153,7 +153,7 @@
 //                       <img src="upload/blog/c13.jpg" alt="" />
 //                     </div>
 //                     <h2>
-//                       <a href="single-post.html">
+//                       <a to="/single">
 //                         Morbi in sem quis dui placerat ornare.
 //                       </a>
 //                     </h2>
@@ -169,7 +169,7 @@
 //                       <img src="upload/blog/c15.jpg" alt="" />
 //                     </div>
 //                     <h2>
-//                       <a href="single-post.html">
+//                       <a to="/single">
 //                         Quisque volutpat mattis semper suscipit eros.
 //                       </a>
 //                     </h2>
@@ -201,7 +201,7 @@
 //                       <img src="upload/blog/p5.jpg" alt="" />
 //                     </div>
 //                     <h2>
-//                       <a href="single-post.html">Cras ornare tristique elit.</a>
+//                       <a to="/single">Cras ornare tristique elit.</a>
 //                     </h2>
 //                     <ul className="post-tags">
 //                       <li>
@@ -215,7 +215,7 @@
 //                       <img src="upload/blog/p6.jpg" alt="" />
 //                     </div>
 //                     <h2>
-//                       <a href="single-post.html">Praesent placerat risus.</a>
+//                       <a to="/single">Praesent placerat risus.</a>
 //                     </h2>
 //                     <ul className="post-tags">
 //                       <li>
@@ -229,7 +229,7 @@
 //                       <img src="upload/blog/p7.jpg" alt="" />
 //                     </div>
 //                     <h2>
-//                       <a href="single-post.html">
+//                       <a to="/single">
 //                         Morbi in sem quis dui placerat ornare.
 //                       </a>
 //                     </h2>
@@ -245,7 +245,7 @@
 //                       <img src="upload/blog/p8.jpg" alt="" />
 //                     </div>
 //                     <h2>
-//                       <a href="single-post.html">
+//                       <a to="/single">
 //                         Quisque volutpat mattis semper suscipit eros.
 //                       </a>
 //                     </h2>
@@ -280,9 +280,9 @@ function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <a className="navbar-brand" href="index.html">
-          <img src="images/logo.png" alt="" />
-        </a>
+        <Link to="/" className="navbar-brand">
+          COMPLETE BLOG
+        </Link>
 
         <button
           className="navbar-toggler"

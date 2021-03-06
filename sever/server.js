@@ -28,6 +28,11 @@ require("./models/Comment");
 // Init Middleware
 app.use(express.json());
 
+//Router import
+app.use(require("./routes/post"));
+// app.use(require("./routes/category"));
+// app.use(require("./routes/comment"));
+
 const PORT = process.env.PORT || 5000;
 
 var server = app.listen(PORT, function () {

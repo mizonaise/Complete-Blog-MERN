@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const PostDesc = () => {
   return (
     <>
@@ -143,19 +145,19 @@ const PostDesc = () => {
         </div>
         <div className="prev-next-box">
           <div className="prev-box">
-            <a className="text-link" href="single-post.html">
+            <Link className="text-link" to="/single">
               <i className="fa fa-angle-left"></i> Previous Post
-            </a>
+            </Link>
             <h2>
-              <a href="single-post.html">Sed adipiscing ornare risus.</a>
+              <Link to="/single">Sed adipiscing ornare risus.</Link>
             </h2>
           </div>
           <div className="next-box">
-            <a className="text-link next-link" href="single-post.html">
+            <Link className="text-link next-link" to="/single">
               Next Post <i className="fa fa-angle-right"></i>
-            </a>
+            </Link>
             <h2>
-              <a href="single-post.html">Quisque a lectus.</a>
+              <Link to="/single">Quisque a lectus.</Link>
             </h2>
           </div>
         </div>
@@ -165,15 +167,15 @@ const PostDesc = () => {
             <div className="col-lg-4 col-md-4">
               <div className="news-post standard-post text-left">
                 <div className="image-holder">
-                  <a href="single-post.html">
+                  <Link to="/single">
                     <img src="upload/blog/p1.jpg" alt="" />
-                  </a>
+                  </Link>
                 </div>
                 <a className="text-link" href="/">
                   Food
                 </a>
                 <h2>
-                  <a href="single-post.html">Fusce pellentesque suscipit.</a>
+                  <Link to="/single">Fusce pellentesque suscipit.</Link>
                 </h2>
                 <ul className="post-tags">
                   <li>
@@ -186,15 +188,15 @@ const PostDesc = () => {
             <div className="col-lg-4 col-md-4">
               <div className="news-post standard-post text-left">
                 <div className="image-holder">
-                  <a href="single-post.html">
+                  <Link to="/single">
                     <img src="upload/blog/p2.jpg" alt="" />
-                  </a>
+                  </Link>
                 </div>
                 <a className="text-link" href="/">
                   Lifestyle
                 </a>
                 <h2>
-                  <a href="single-post.html">Quisque a lectus. </a>
+                  <Link to="/single">Quisque a lectus. </Link>
                 </h2>
                 <ul className="post-tags">
                   <li>
@@ -207,15 +209,15 @@ const PostDesc = () => {
             <div className="col-lg-4 col-md-4">
               <div className="news-post standard-post text-left">
                 <div className="image-holder">
-                  <a href="single-post.html">
+                  <Link to="/single">
                     <img src="upload/blog/p3.jpg" alt="" />
-                  </a>
+                  </Link>
                 </div>
                 <a className="text-link" href="/">
                   Travel
                 </a>
                 <h2>
-                  <a href="single-post.html">Vestibulum commodo tortor.</a>
+                  <Link to="/single">Vestibulum commodo tortor.</Link>
                 </h2>
                 <ul className="post-tags">
                   <li>

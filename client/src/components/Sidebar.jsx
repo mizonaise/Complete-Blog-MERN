@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Sidebar = () => {
   return (
     <div className="col-lg-4">
@@ -57,7 +59,7 @@ const Sidebar = () => {
                 Lifestyle
               </a>
               <h2>
-                <a href="single-post.html">Fusce pellentesque suscipit.</a>
+                <Link to="/single">Fusce pellentesque suscipit.</Link>
               </h2>
               <ul className="post-tags">
                 <li>2 days ago</li>
@@ -71,9 +73,9 @@ const Sidebar = () => {
                 Food
               </a>
               <h2>
-                <a href="single-post.html">
+                <Link to="/single">
                   Integer vitae libero ac risus egestas placerat.
-                </a>
+                </Link>
               </h2>
               <ul className="post-tags">
                 <li>2 days ago</li>
@@ -87,9 +89,7 @@ const Sidebar = () => {
                 Lifestyle
               </a>
               <h2>
-                <a href="single-post.html">
-                  Vestibulum commodo felisquis tortor.
-                </a>
+                <Link to="/single">Vestibulum commodo felisquis tortor.</Link>
               </h2>
               <ul className="post-tags">
                 <li>4 days ago</li>
@@ -103,7 +103,7 @@ const Sidebar = () => {
                 Travel
               </a>
               <h2>
-                <a href="single-post.html">Quisque a lectus. </a>
+                <Link to="/single">Quisque a lectus. </Link>
               </h2>
               <ul className="post-tags">
                 <li>4 days ago</li>
