@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 
-function TrendingPosts() {
+function TrendingPosts(props) {
+  console.log(props);
+  const trendingPosts = props.trendingPosts;
+  console.log(trendingPosts);
   return (
     <section className="top-home-section">
       <div className="container">
@@ -11,13 +14,13 @@ function TrendingPosts() {
           <div className="row">
             <div className="col-lg-6 col-md-12">
               <div className="news-post image-post">
-                <img src="upload/blog/home5/a1.jpg" alt="" />
+                <img src={trendingPosts[0]?.imgUrl} alt="" />
                 <div className="hover-post">
                   <a className="category-link" href="/">
-                    Lifestyle
+                    {trendingPosts[0]?.category.name}
                   </a>
                   <h2>
-                    <Link to="/single">Praesent placerat quiseros.</Link>
+                    <Link to="/single">{trendingPosts[0]?.title}</Link>
                   </h2>
                   <ul className="post-tags">
                     <li>3 days ago</li>
@@ -35,14 +38,14 @@ function TrendingPosts() {
                   <div className="news-post standard-post left-align">
                     <div className="image-holder">
                       <Link to="/single">
-                        <img src="upload/blog/home2/m2.jpg" alt="" />
+                        <img src={trendingPosts[1]?.imgUrl} alt="" />
                       </Link>
                     </div>
                     <a className="text-link" href="/">
-                      Travel
+                      {trendingPosts[1]?.category.name}
                     </a>
                     <h2>
-                      <Link to="/single">Vestibulum auctor dapibus.</Link>
+                      <Link to="/single">{trendingPosts[1]?.title}</Link>
                     </h2>
                     <ul className="post-tags">
                       <li>
@@ -56,14 +59,14 @@ function TrendingPosts() {
                   <div className="news-post standard-post left-align">
                     <div className="image-holder">
                       <Link to="/single">
-                        <img src="upload/blog/home2/m3.jpg" alt="" />
+                        <img src={trendingPosts[2]?.imgUrl} alt="" />
                       </Link>
                     </div>
                     <a className="text-link" href="/">
-                      Travel
+                      {trendingPosts[2]?.category.name}
                     </a>
                     <h2>
-                      <Link to="/single">Praesent placerat risus.</Link>
+                      <Link to="/single">{trendingPosts[2]?.title}</Link>
                     </h2>
                     <ul className="post-tags">
                       <li>
@@ -80,14 +83,14 @@ function TrendingPosts() {
                   <div className="news-post standard-post left-align">
                     <div className="image-holder">
                       <Link to="/single">
-                        <img src="upload/blog/home2/m6.jpg" alt="" />
+                        <img src={trendingPosts[3]?.imgUrl} alt="" />
                       </Link>
                     </div>
                     <a className="text-link" href="/">
-                      Food
+                      {trendingPosts[3]?.category.name}
                     </a>
                     <h2>
-                      <Link to="/single">Aliquam tincidunt mauriseu</Link>
+                      <Link to="/single">{trendingPosts[3]?.title}</Link>
                     </h2>
                     <ul className="post-tags">
                       <li>
@@ -101,14 +104,14 @@ function TrendingPosts() {
                   <div className="news-post standard-post left-align">
                     <div className="image-holder">
                       <Link to="/single">
-                        <img src="upload/blog/home2/m7.jpg" alt="" />
+                        <img src={trendingPosts[4]?.imgUrl} alt="" />
                       </Link>
                     </div>
                     <a className="text-link" href="/">
-                      Lifestyle
+                      {trendingPosts[4]?.category.name}
                     </a>
                     <h2>
-                      <Link to="/single">Praesent placerat risus.</Link>
+                      <Link to="/single">{trendingPosts[4]?.title}</Link>
                     </h2>
                     <ul className="post-tags">
                       <li>

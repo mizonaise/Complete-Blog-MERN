@@ -84,19 +84,26 @@ router.post("/new-post", (req, res) => {
     isFeatured,
   } = req.body;
 
+  console.log(req.body);
+  console.log(title);
+  console.log(description);
+  console.log(imgUrl);
+  console.log(category);
+  console.log(numOfLikes);
+  console.log(isFeatured);
   if (
     !title ||
     !description ||
     !imgUrl ||
     !category ||
-    !numOfLikes ||
-    !isFeatured
+    !numOfLikes
   ) {
     res.json({ err: "All fields are required" });
   }
 
-  Category.findOne({ _id: category.id })
+  Category.findOne({ name: category })
     .then((cat) => {
+      console.log(cat);
       const post = new Post({
         title,
         description,

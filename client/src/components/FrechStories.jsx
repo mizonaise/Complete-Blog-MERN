@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 
-function FrechStories() {
+function FrechStories(props) {
+  console.log(props);
+  const freshStories = props.freshStories;
+  console.log(freshStories);
   return (
     <section className="fresh-section on-trend-mode">
       <div className="container">
@@ -9,16 +12,21 @@ function FrechStories() {
         </div>
         <div className="fresh-box owl-wrapper">
           <div className="owl-carousel" data-num="2">
+            {/* {freshStories.map((item, i) => (
+                <a key={i} href="/">
+                  <div className="ic-follow">{item.title}</div>
+                </a>
+              ))} */}
             <div className="item">
               <div className="news-post article-post">
                 <div className="image-holder">
-                  <img src="upload/blog/home5/a2.jpg" alt="" />
+                  <img src={freshStories[0]?.imgUrl} alt="" />
                 </div>
                 <a className="text-link" href="/">
-                  Travel
+                  {freshStories[0]?.category.name}
                 </a>
                 <h2>
-                  <Link to="/single">Vivamus vestibulum ntulla necante.</Link>
+                  <Link to="/single">{freshStories[0]?.title}</Link>
                 </h2>
                 <ul className="post-tags">
                   <li>3 days ago</li>
@@ -29,12 +37,7 @@ function FrechStories() {
                     by <a href="/">John Smith</a>
                   </li>
                 </ul>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                  erat ut turpis. Suspendisse urna viverra donec nec justo eget
-                  felis facilisis fermentum ...{" "}
-                </p>
+                <p>{freshStories[0]?.description}</p>
                 <Link className="text-link" to="/single">
                   Read More
                 </Link>
@@ -44,13 +47,13 @@ function FrechStories() {
             <div className="item">
               <div className="news-post article-post">
                 <div className="image-holder">
-                  <img src="upload/blog/home5/a3.jpg" alt="" />
+                  <img src={freshStories[1]?.imgUrl} alt="" />
                 </div>
                 <a className="text-link" href="/">
-                  Food
+                  {freshStories[1]?.category.name}
                 </a>
                 <h2>
-                  <Link to="/single">Praesent placerat risus quis eros.</Link>
+                  <Link to="/single">{freshStories[1]?.title}</Link>
                 </h2>
                 <ul className="post-tags">
                   <li>3 days ago</li>
@@ -61,12 +64,7 @@ function FrechStories() {
                     by <a href="/">John Smith</a>
                   </li>
                 </ul>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                  erat ut turpis. Suspendisse urna viverra donec nec justo eget
-                  felis facilisis fermentum ...{" "}
-                </p>
+                <p>{freshStories[1]?.description}</p>
                 <Link className="text-link" to="/single">
                   Read More
                 </Link>
@@ -76,13 +74,13 @@ function FrechStories() {
             <div className="item">
               <div className="news-post article-post">
                 <div className="image-holder">
-                  <img src="upload/blog/home5/a4.jpg" alt="" />
+                  <img src={freshStories[2]?.imgUrl} alt="" />
                 </div>
                 <a className="text-link" href="/">
-                  Food
+                  {freshStories[2]?.category.name}
                 </a>
                 <h2>
-                  <Link to="/single">Morbi in sem quisdui placerat ornare.</Link>
+                  <Link to="/single">{freshStories[2]?.title}</Link>
                 </h2>
                 <ul className="post-tags">
                   <li>3 days ago</li>
@@ -93,12 +91,7 @@ function FrechStories() {
                     by <a href="/">John Smith</a>
                   </li>
                 </ul>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                  erat ut turpis. Suspendisse urna viverra donec nec justo eget
-                  felis facilisis fermentum ...{" "}
-                </p>
+                <p>{freshStories[2]?.description}</p>
                 <Link className="text-link" to="/single">
                   Read More
                 </Link>

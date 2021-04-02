@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { HomeScreen, CategoryScreen, SingleScreen, NotFound } from "./screens";
 
 function App() {
+
   return (
     <BrowserRouter>
       <Switch>

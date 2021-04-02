@@ -784,7 +784,8 @@ section.page-banner-section .container > span {
 }
 .image-post img {
   width: 100%;
-  height: auto;
+  height: 690px;
+  object-fit: cover;
   transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
@@ -900,7 +901,8 @@ section.page-banner-section .container > span {
 }
 .standard-post img {
   width: 100%;
-  height: auto;
+  height: 250px;
+  object-fit: cover;
   transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
   -webkit-transition: all 0.6s ease-in-out;
@@ -1036,7 +1038,8 @@ section.page-banner-section .container > span {
 
 .article-post img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
 }
 
 .article-post h2 {

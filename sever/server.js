@@ -9,7 +9,9 @@ const db = process.env.MONGODB_URL;
 
 mongoose.connect(db, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true
 });
 
 mongoose.connection.on("connected", () => {
@@ -30,7 +32,7 @@ app.use(express.json());
 
 //Router import
 app.use(require("./routes/post"));
-// app.use(require("./routes/category"));
+app.use(require("./routes/category"));
 // app.use(require("./routes/comment"));
 
 const PORT = process.env.PORT || 5000;
